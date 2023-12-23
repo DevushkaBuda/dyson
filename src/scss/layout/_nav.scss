@@ -1,0 +1,49 @@
+.nav {
+    display: flex;
+    align-items: center;
+
+
+    &__logo{
+        width: 183px;
+        height: 77px;
+        flex-shrink: 0;
+        margin: 7px 0 7px 0;
+    }
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: auto;
+
+    &__link {
+        position: relative;
+        color: var(--bg-color);
+        transition: all 0.2s ease-in-out;
+        font-size: 20px;
+        font-weight: 900;
+
+&::before {
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: all 0.2s ease-in-out;
+    content: '';
+}
+
+        &:hover {
+            color: var(--primary-color);
+
+            &::before {
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+}

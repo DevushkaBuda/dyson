@@ -1,0 +1,42 @@
+
+
+
+.header {
+
+    width: 100%;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: fade-in-top 0.3s 1 ease-out 0.7s forwards;
+    background-color: #111111;
+
+    &__cart {
+        margin-left: 65px;
+    }
+
+}
+
+.cart {
+    display: flex;
+    width: 36px;
+    height: 36px;
+
+    align-items: center;
+    gap: 10px;
+
+
+    &__link {
+        & > svg {
+            fill: var(--text-color);
+            transition: all 0.2s ease-in-out;
+        }
+
+        &:hover {
+            & > svg {
+                fill: var(--primary-color);
+            }
+        }
+    }
+}

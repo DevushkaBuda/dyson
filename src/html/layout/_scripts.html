@@ -1,0 +1,69 @@
+<script src="./js/app.min.js"></script>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+    // Функция для управления значениями спиннера
+    function updateSpinnerValue(spinnerId, increment) {
+      const spinner = document.getElementById(spinnerId);
+      const input = spinner.querySelector(".quantity__val input");
+      let value = parseInt(input.value, 10);
+
+      // Увеличение или уменьшение значения в зависимости от параметра increment
+      value = increment ? value + 1 : Math.max(value - 1, 1);
+
+      // Обновление значения в поле ввода
+      input.value = value;
+    }
+
+    // Назначение обработчиков событий для каждого спиннера
+    document.getElementById("spinner1").addEventListener("click", function (event) {
+      if (event.target.closest(".quantity__dec")) {
+        updateSpinnerValue("spinner1", false); // уменьшение значения
+      } else if (event.target.closest(".quantity__inc")) {
+        updateSpinnerValue("spinner1", true); // увеличение значения
+      }
+    });
+
+    document.getElementById("spinner2").addEventListener("click", function (event) {
+      if (event.target.closest(".quantity__dec")) {
+        updateSpinnerValue("spinner2", false); // уменьшение значения
+      } else if (event.target.closest(".quantity__inc")) {
+        updateSpinnerValue("spinner2", true); // увеличение значения
+      }
+    });
+    document.getElementById("spinner3").addEventListener("click", function (event) {
+      if (event.target.closest(".quantity__dec")) {
+        updateSpinnerValue("spinner3", false); // уменьшение значения
+      } else if (event.target.closest(".quantity__inc")) {
+        updateSpinnerValue("spinner3", true); // увеличение значения
+      }
+    });
+    document.getElementById("spinner4").addEventListener("click", function (event) {
+      if (event.target.closest(".quantity__dec")) {
+        updateSpinnerValue("spinner4", false); // уменьшение значения
+      } else if (event.target.closest(".quantity__inc")) {
+        updateSpinnerValue("spinner4", true); // увеличение значения
+      }
+    });
+
+    document.getElementById("spinner5").addEventListener("click", function (event) {
+      if (event.target.closest(".quantity__dec")) {
+        updateSpinnerValue("spinner5", false); // уменьшение значения
+      } else if (event.target.closest(".quantity__inc")) {
+        updateSpinnerValue("spinner5", true); // увеличение значения
+      }
+    });
+
+    document.getElementById("spinner6").addEventListener("click", function (event) {
+      if (event.target.closest(".quantity__dec")) {
+        updateSpinnerValue("spinner6", false); // уменьшение значения
+      } else if (event.target.closest(".quantity__inc")) {
+        updateSpinnerValue("spinner6", true); // увеличение значения
+      }
+    });
+
+    // При необходимости можно добавить обработчики для других спиннеров
+
+    // При необходимости можно добавить дополнительные функции и настройки
+  });
+</script>

@@ -1,0 +1,131 @@
+.text-info {
+    margin: 0;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    font-family: var(--secondary-font);
+
+    &_md {
+        font-size: 24px;
+    }
+}
+
+.text {
+    margin: 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    font-family: var(--secondary-font);
+}
+
+.text-light {
+    margin: 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    font-family: var(--OpenSans-font);
+}
+
+.text-primary {
+    margin: 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133.333%;
+}
+
+
+.text-price-old{
+    margin: 0;
+    color: var(--text-price);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration-line: line-through;
+}
+
+.text-footer-title{
+    margin: 0;
+    color: var(--bg-color);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.text-footer{
+    margin: 0;
+    
+    font-family: var(--OpenSans-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+.text-price{
+    margin: 0;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.pink-text{
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.t30px500{
+    margin: 0;
+    color: #111;
+    font-family: var(--secondary-font);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.t20px500{
+    margin: 0;
+    color: #111;
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+
+.text-nav{
+    margin: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.t16px400{
+    margin: 0;
+    color: #000;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+}
+
+.text-form {
+    margin: 0;
+    color: #ABABAB;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: var(--OpenSans-font);
+}
